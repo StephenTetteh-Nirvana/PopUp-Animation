@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::root{
+   box-shadow: 0 3px 10px rgba(0,0,0,0.8);
+}
+*{
+    margin: 0px;
+    padding:0px;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    background:#2666CF;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    min-height:100vh;
+}
+
+.openPopUp{
+    padding: 15px 60px;
+    border-radius:25px;
+    outline:none;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+}
+.popup{
+    position:absolute;
+    top:0;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#ffffff;
+    width:350px;
+    height:270px;
+    text-align:center;
+    visibility:hidden;
+    transition:0.5s all;
+}
+.active{
+    visibility: visible;
+    top:50%;
+    transform:translate(-50%,-50%) scale(1);
+}
+.popup .img{
+    width:100px;
+    height:100px;
+    margin-top:-40px;
+    border-radius:50%;
+    background-color:green;
+    text-align:center;
+    display:flex;
+    margin-left:120px;
+}
+.tick{
+  font-size:60px;
+  color:white; 
+  margin:auto;
+}
+.popup h2{
+    margin-top:10px;
+    font-size:30px;
+}
+.popup p{
+    font-size:18px;
+    margin-top:10px;
+}
+.popup button{
+    margin-top:20px;
+    width:90%;
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    cursor:pointer;
+}
